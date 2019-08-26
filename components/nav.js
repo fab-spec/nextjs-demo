@@ -2,8 +2,8 @@ import React from 'react'
 import Link from 'next/link'
 
 const links = [
-  { href: 'https://zeit.co/now', label: 'ZEIT' },
-  { href: 'https://github.com/zeit/next.js', label: 'GitHub' }
+  { href: 'https://fab.dev', label: '💎 FAB Home' },
+  { href: 'https://fab.dev/packages/fab-nextjs', label: '@fab/nextjs docs' }
 ].map(link => {
   link.key = `nav-link-${link.href}-${link.label}`
   return link

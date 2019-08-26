@@ -6,34 +6,36 @@ import Nav from '../components/nav'
 const Home = () => (
   <div>
     <Head>
-      <title>Home</title>
+      <title>NextJS & FAB demo</title>
     </Head>
 
     <Nav />
 
     <div className='hero'>
-      <h1 className='title'>Welcome to Next.js!</h1>
+      <img src={require('../assets/fab-logo-square.png')} alt=""/>
+      <h1 className='title'>Next.js running in a FAB!</h1>
       <p className='description'>
-        To get started, edit <code>pages/index.js</code> and save to reload.
+        This page is statically rendered.
       </p>
 
+
       <div className='row'>
-        <Link href='https://github.com/zeit/next.js#setup'>
+        <Link href='/dynamic'>
           <a className='card'>
-            <h3>Getting Started &rarr;</h3>
-            <p>Learn more about Next.js on GitHub and in their examples.</p>
+            <h3>Dynamic page</h3>
+            <p>Dropping <code>getInitialProps</code> onto a page will make it dynamic.</p>
           </a>
         </Link>
-        <Link href='https://github.com/zeit/next.js/tree/master/examples'>
+        <Link href='/bill/200'>
           <a className='card'>
-            <h3>Examples &rarr;</h3>
-            <p>Find other example boilerplates on the Next.js GitHub.</p>
+            <h3>With arguments</h3>
+            <p>By using a filename like <code>bill/[size].js</code> we can create a dynamic Bill Murray wallpaper</p>
           </a>
         </Link>
         <Link href='https://github.com/zeit/next.js'>
           <a className='card'>
-            <h3>Create Next App &rarr;</h3>
-            <p>Was this tool helpful? Let us know how we can improve it!</p>
+            <h3>Bigger Bill Murray</h3>
+            <p>Same as the previous link, but the images are bigger!</p>
           </a>
         </Link>
       </div>
@@ -44,10 +46,15 @@ const Home = () => (
         width: 100%;
         color: #333;
       }
+      .hero > img {
+        display: block;
+        margin: 0 auto;
+        max-width: 260px;
+        margin-top: 60px;
+      }
       .title {
         margin: 0;
         width: 100%;
-        padding-top: 80px;
         line-height: 1.15;
         font-size: 48px;
       }
