@@ -26,13 +26,13 @@ const Home = () => (
             <p>Dropping <code>getInitialProps</code> onto a page will make it dynamic.</p>
           </a>
         </Link>
-        <Link href='/background/300'>
+        <Link href="/background/[size]" as="/background/300">
           <a className='card'>
             <h3>With arguments</h3>
             <p>By using a filename like <code>bill/[size].js</code> we can create a dynamic Bill Murray wallpaper</p>
           </a>
         </Link>
-        <Link href='/background/400'>
+        <Link href="/background/[size]" as="/background/400">
           <a className='card'>
             <h3>Bigger Bill Murray</h3>
             <p>Same as the previous link, but the images are bigger!</p>

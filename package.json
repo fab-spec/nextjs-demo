@@ -5,9 +5,12 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:fab": "npm run build && npm run fab:compile",
+    "fab:compile": "NODE_ENV=production fab-nextjs build",
     "start": "next start"
   },
   "dependencies": {
+    "@fab/nextjs": "^0.4.0-0",
     "next": "9.0.5",
     "next-images": "^1.1.2",
     "react": "16.9.0",
