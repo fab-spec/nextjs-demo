@@ -15,7 +15,7 @@ const Home = () => (
       <img src={require('../assets/fab-logo-square.png')} alt=""/>
       <h1 className='title'>Next.js running in a FAB!</h1>
       <p className='description'>
-        This page is statically rendered. <Link href='/background/300'>wat</Link>
+        This page is statically rendered.
       </p>
 
 
