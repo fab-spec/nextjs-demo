@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "build:fab": "npm run build && npm run fab:compile",
+    "fab:build": "npm run build && npm run fab:compile",
     "fab:compile": "NODE_ENV=production fab-nextjs build",
     "fab:deploy": "fab-cf-workers deploy fab.zip",
     "start": "next start"
