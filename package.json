@@ -11,7 +11,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "@fab/cf-workers": "^0.0.2",
+    "@fab/cf-workers": "^0.0.5",
     "@fab/nextjs": "^0.4.0-0",
     "next": "9.0.5",
     "next-images": "^1.1.2",
